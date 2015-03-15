@@ -26,8 +26,11 @@ Java configuration.
 
 ### Configuration
 
-Both of the configuration files within this project can be used in complete isolation to register the contained JAX-WS
-endpoint.
+Either the `JavaConfiguration` or `XMLConfiguration` could be run in isolation along side the `CXFServletConfiguration`.
+
+[`CXFServletConfiguration`](src/test/java/example/spring/jaxws/cxf/CXFServletConfiguration.java)
+
+This configuration class loads the `CXFServlet` which is what any subsequent JAX-WS endpoints will be registered to.
 
 [`JavaConfiguration`](src/test/java/example/spring/jaxws/cxf/JavaConfiguration.java)
 
@@ -36,4 +39,4 @@ configuration.
 
 [`XMLConfiguration`](src/test/java/example/spring/jaxws/cxf/XMLConfiguration.java)
 
-This configuration file shows how existing CXF XML configuration can be used in Java configuration.
+This configuration file shows how existing CXF XML configuration can be used within Java configuration.

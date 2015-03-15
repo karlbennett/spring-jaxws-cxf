@@ -20,7 +20,7 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = JavaConfiguration.class)
+@SpringApplicationConfiguration(classes = CXFServletConfiguration.class)
 @WebAppConfiguration("classpath:")
 @IntegrationTest({"server.port=0", "management.port=0"})
 public class UsersJavaTest {
