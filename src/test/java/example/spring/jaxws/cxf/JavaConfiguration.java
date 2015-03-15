@@ -20,7 +20,7 @@ public class JavaConfiguration {
     private SpringDataUsers users;
 
     @Bean
-    public Endpoint calculator() {
+    public Endpoint usersEndpoint() {
         EndpointImpl endpoint = new EndpointImpl(bus, users);
         endpoint.publish("/java-users");
         return endpoint;
