@@ -31,8 +31,8 @@ public class CXFServletConfiguration {
 
     @Bean
     public ServletRegistrationBean cxfServlet() {
-        ServletRegistrationBean servletDef = new ServletRegistrationBean(new CXFServlet(), "/cxf/*");
-        servletDef.setLoadOnStartup(1);
-        return servletDef;
+        ServletRegistrationBean servlet = new ServletRegistrationBean(new CXFServlet(), "/cxf/*");
+        servlet.setLoadOnStartup(1);
+        return servlet;
     }
 }

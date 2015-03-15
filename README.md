@@ -34,8 +34,8 @@ This configuration class loads the `CXFServlet` which is what any subsequent JAX
 
 [`JavaConfiguration`](src/test/java/example/spring/jaxws/cxf/JavaConfiguration.java)
 
-This configuration class shows the minimum amount of code to register a single JAX-WS endpoint through pure Java
-configuration.
+This configuration class shows the minimum amount of code required to register a single JAX-WS endpoint through pure
+Java configuration.
 
 [`XMLConfiguration`](src/test/java/example/spring/jaxws/cxf/XMLConfiguration.java)
 
